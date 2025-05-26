@@ -12,18 +12,15 @@
 
 <body>
 	<div id="content">
-		<h1 title="The governing body of this here slab of digital noise" class="baskerville-font">
-			<a class="exep" href=index.html>Cillic Archive</a>
-		</h1>
+		<div id="navigation-container"></div>
 
-		<div id="clicker">
-			<p>
-				<a href=music.html>music</a>||
-				<a href=images.html>images</a>||
-				<a href=videos.html>videos</a>||
-				<a href=stories.html>stories</a>
-			</p>
-		</div>
+		<script>
+			fetch('includes/navigation.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('navigation-container').innerHTML = data;
+				});
+		</script>
 
 		<h2>News</h2>
 		<p>Information and redirects for most recent releases</p>
@@ -37,7 +34,7 @@
 		<hr>
 
 		<p id="mailer">
-			<a href="mailto:ianvidal28@gmail.com">contact</a>
+			<a href="mailto:muhEmail">contact</a>
 		</p>
 	</div>
 </body>
