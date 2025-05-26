@@ -137,8 +137,6 @@ a {
 }
 
 html {
-    background-attachment: fixed;
-    background-size: cover;
     visibility: visible;
     opacity: 1;
 }
