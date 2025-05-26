@@ -67,18 +67,17 @@
 			A: 	I am not a very good musician but my friends who are classically trained are more keen on physical interface. But a single good controller keyboard saves an awful lot of fuss and it makes software just like hardware. For example I've got the Arturia suite and the dedicated controller for that. Works fine.
 
 		</p>
-		<hr>
 
 		<div id="footer-container"></div>
 		<script>
-		fetch('includes/footer.html')
-			.then(response => response.text())
-			.then(data => {
-				const container = document.getElementById('footer-container');
-				container.innerHTML = data;
-				
-			});
-</script>
+				fetch('includes/footer.html')
+					.then(response => response.text())
+					.then(data => {
+						const container = document.getElementById('footer-container');
+						container.innerHTML = data;
+						
+					});
+		</script>
 	</div>
 </body>
 </html>

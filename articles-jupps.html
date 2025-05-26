@@ -16,14 +16,14 @@
 	<div id="content">
 		<div id="navigation-container"></div>
 		<script>
-fetch('includes/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('navigation-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 
 		<h3>"Interview with Jim Jupps of Belbury Poly"</h3>
 		<p id="story">
@@ -66,19 +66,16 @@ fetch('includes/navigation.html')
 			A: Julian House and I started the label purely as an outlet for our own musical projects at the time. Musically we worked in very different ways from each other, but we always new we had a lot of interests and influences in common and saw a way that a label could be a very neat visual representation of our work, given that we had no time or interest in being performing artists and were happy to stay anonymous. It was at a time before the dominance of downloads and way before streaming was possible, so initially it was a website to just sell a few burn to order CDRs to anyone who might be interested. We always envisaged that the label itself would have equal billing with the artist's name and that our artists would remain fairly anonymous. It grew from there and adapted as we started to work with more people. But the original aesthetic and identity is still there as the defining feature of the label.
 		</p>
 
-
-		<hr>
-
 		<div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/footer.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('footer-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 	</div>
 </body>
 </html>

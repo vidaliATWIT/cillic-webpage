@@ -51,18 +51,17 @@ fetch('includes/navigation.html')
 		<p id="story">
 			I burned the letter without reading it. It alleged a series of events that were incompatible with the reality of the case. I convinced the guard to turn up the thermostat in my room. Finally, I laid down on the bench with the blanket over me and dreamt I was a dog in a room with no doors. I waited an eternity before I remembered that face. In the end, I couldn’t help but howl.
 		</p>
-		<hr>
 
 		<div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/footer.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('footer-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 	</div>
 </body>
 </html>

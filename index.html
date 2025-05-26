@@ -17,18 +17,17 @@
 	<div id="content">
 		<div id="navigation-container"></div>
 		<script>
-fetch('includes/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('navigation-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 
 		<h2>News</h2>
 		<p>Information and redirects for most recent releases</p>
-		<hr />
 		<h3><i>Change thy name, change thine life</i></h3>
 		<img id="newspic" src="images/stars.jpg">
 		<p id="story">

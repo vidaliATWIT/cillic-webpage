@@ -44,18 +44,16 @@ fetch('includes/navigation.html')
 			So he slept, and years later when the home was in ruin, consumed by dust, mold, and the creatures who thrive in disuse, he would walk into the room and see the man sitting at his desk, trapped in an eternal daylight untouched by time. Far away from any force human or otherwise that would sacrifice him in the name of this or any other life.
 		</p>
 
-		<hr>
-
 		<div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/footer.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('footer-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 	</div>
 </body>
 </html>

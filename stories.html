@@ -16,14 +16,14 @@
         <div id="content">
             <div id="navigation-container"></div>
 		<script>
-fetch('includes/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('navigation-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+        fetch('includes/navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('navigation-container');
+                container.innerHTML = data;
+                
+            });
+        </script>
 
             <h2>Writings<br></h2>
             <p>A collection of short stories and articles<br></p>
@@ -56,8 +56,6 @@ fetch('includes/navigation.html')
                     <a href=stories-gulley00.html>Gulley</a>
                 </li>
             </ul>
-
-            <hr>
 
             <div id="footer-container"></div>
             <script>

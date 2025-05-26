@@ -16,14 +16,14 @@
     <div id="content">
        <div id="navigation-container"></div>
 		<script>
-fetch('includes/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('navigation-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+        fetch('includes/navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('navigation-container');
+                container.innerHTML = data;
+                
+            });
+        </script>
 
         <h2>Images<br></h2>
         <p>
@@ -42,18 +42,16 @@ fetch('includes/navigation.html')
             <img id="logo" src="images/art/poster.jpg"/>
             <h4></h4>
 
-        <hr>
-
         <div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const container = document.getElementById('footer-container');
+                container.innerHTML = data;
+                
+            });
+        </script>
     </div>
 </body>
 </html>

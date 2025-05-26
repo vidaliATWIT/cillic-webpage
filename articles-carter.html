@@ -127,18 +127,17 @@ fetch('includes/navigation.html')
 		<p id="story">
 			A: I think that, particularly in our genres of music, equipment absolutely has an effect on one's process of composing and recording. Almost any genre of music composed on a piano, a guitar, a cornet, or even a flute will primarily comprise the same fundamentals of melody, rhythm, tone and expression. Of course if played well there is nothing wrong with that. But even if you played an experimental piece with any of those instruments they would still impart to the listener those same basic elements of sound, it's physics. However, record any of those sounds and put them into a software audio editor, a sampler or even just onto tape and you can change them beyond recognition. Which in turn and in itself could inspire a completely new composition. Of course when you start combining those various techniques with each other there are essentially no limits and you enter the heady realms of undiscovered indescribable sounds.
 		</p>
-		<hr>
 
 		<div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/footer.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('footer-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 	</div>
 </body>
 </html>

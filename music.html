@@ -16,14 +16,14 @@
 		<div id="content">
 		<div id="navigation-container"></div>
 		<script>
-fetch('includes/navigation.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('navigation-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 
 		<h2>Music<br></h2>
 		<p>
@@ -91,17 +91,16 @@ fetch('includes/navigation.html')
 				Mellodrone EP (2018) <a id="flac" href="https://experimentalcolourtransmission.bandcamp.com/album/mellodrone-ep" target="_blank">[listen]</a>
 			</li>
 		</ul>
-		<hr>
 
 		<div id="footer-container"></div>
 		<script>
-fetch('includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        const container = document.getElementById('footer-container');
-        container.innerHTML = data;
-        
-    });
-</script>
+		fetch('includes/footer.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('footer-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
 	</body>
 </html>
