@@ -33,9 +33,14 @@
 
 		<hr>
 
-		<p id="mailer">
-			<a href="mailto:muhEmail">contact</a>
-		</p>
+		<script>
+			fetch('includes/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-container').innerHTML = data;
+				});
+		</script>
+
 	</div>
 </body>
 </html>
