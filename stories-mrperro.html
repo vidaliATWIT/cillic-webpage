@@ -11,16 +11,14 @@
 </head>
 <body>
 	<div id="content">
-		<h1 title="The governing body of this here slab of digital noise">
-		<a class="exep" href=index.html>Cillic Archive</a></h1>
-		<div id="clicker">
-			<p>
-				<a href=music.html>music</a>||
-				<a href=images.html>images</a>||
-				<a href=videos.html>videos</a>||
-				<a href=stories.html>stories</a>
-			</p>
-		</div>
+		<div id="navigation-container"></div>
+		<script>
+			fetch('includes/navigation.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('navigation-container').innerHTML = data;
+				});
+		</script>
 
 		<h3>"Mr. Perro"</h3>	
 		<p id="story">
@@ -50,8 +48,14 @@
 		</p>
 		<hr>
 
-		<p id="mailer"><a href="mailto:ianvidal28@gmail.com">contact</a></p>
+		<div id="footer-container"></div>
+		<script>
+			fetch('includes/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-container').innerHTML = data;
+				});
+		</script>
 	</div>
 </body>
 </html>
-He was pacing the room, picking up what used to be his clothes from the hamper, opening what used to be his drawers. He even played with his pencils. He turned off the light and looked out the window. The lights from outside reflected on his glasses. Then he walked towards the closet.
