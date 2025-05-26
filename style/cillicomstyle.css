@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(images/hallway.png);
+    background-image: url(../images/hallway.PNG);
     background-attachment: fixed;
     background-size: cover;
 }
