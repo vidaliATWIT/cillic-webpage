@@ -136,3 +136,8 @@ a {
     color: darkred;
     text-decoration: none;
 }
+
+html {
+    visibility: visible;
+    opacity: 1;
+}
