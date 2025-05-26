@@ -1,22 +1,28 @@
 ﻿<html>
-<div id="header-container"></div>
+<div id="header-container" style="visibility: hidden;"></div>
 	<script>
 		fetch('includes/header.html')
 			.then(response => response.text())
 			.then(data => {
-				document.getElementById('header-container').innerHTML = data;
+				.then(data => {
+        const container = document.getElementById('header-container');
+        container.innerHTML = data;
+        container.style.visibility = 'visible';
+    });
 			});
 </script>
 <body>
 	<div id="content">
-		<div id="navigation-container"></div>
+		<div id="navigation-container" style="visibility: hidden;"></div>
 		<script>
-			fetch('includes/navigation.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('navigation-container').innerHTML = data;
-				});
-		</script>
+fetch('includes/navigation.html')
+    .then(response => response.text())
+    .then(data => {
+        const container = document.getElementById('navigation-container');
+        container.innerHTML = data;
+        container.style.visibility = 'visible';
+    });
+</script>
 
 		<h3>"Gulley 00"</h3>	
 		<p id="story">
@@ -37,14 +43,16 @@
 
 		<hr>
 
-		<div id="footer-container"></div>
+		<div id="footer-container" style="visibility: hidden;"></div>
 		<script>
-			fetch('includes/footer.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('footer-container').innerHTML = data;
-				});
-		</script>
+fetch('includes/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        const container = document.getElementById('footer-container');
+        container.innerHTML = data;
+        container.style.visibility = 'visible';
+    });
+</script>
 	</div>
 </body>
 </html>
