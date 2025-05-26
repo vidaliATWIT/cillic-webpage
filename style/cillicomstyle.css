@@ -138,6 +138,7 @@ a {
 }
 
 html {
+    background-color: black;
     visibility: visible;
     opacity: 1;
 }
