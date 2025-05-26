@@ -43,14 +43,14 @@
 			
 		<hr>
 			
-		<div id="footer-container" style="visibility: hidden;"></div>
+		<div id="footer-container"></div>
 		<script>
 fetch('includes/footer.html')
     .then(response => response.text())
     .then(data => {
         const container = document.getElementById('footer-container');
         container.innerHTML = data;
-        container.style.visibility = 'visible';
+        
     });
 </script>
 	</div>

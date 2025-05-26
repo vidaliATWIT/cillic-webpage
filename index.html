@@ -1,28 +1,28 @@
 ﻿<html>
 <head>
     <style>html{visibility: hidden;opacity:0;}</style>
-</head>
-<div id="header-container" style="visibility: hidden;"></div>
+<div id="header-container"></div>
 	<script>
 		fetch('includes/header.html')
 			.then(response => response.text())
 			.then(data => {
         const container = document.getElementById('header-container');
         container.innerHTML = data;
-        container.style.visibility = 'visible';
+        
     });
 	</script>
+</head>
 
 <body>
 	<div id="content">
-		<div id="navigation-container" style="visibility: hidden;"></div>
+		<div id="navigation-container"></div>
 		<script>
 fetch('includes/navigation.html')
     .then(response => response.text())
     .then(data => {
         const container = document.getElementById('navigation-container');
         container.innerHTML = data;
-        container.style.visibility = 'visible';
+        
     });
 </script>
 
@@ -35,7 +35,7 @@ fetch('includes/navigation.html')
 			The previous name was a placeholder that lasted a total of 5 years. After braving the depths of our subconscious, a true name for the endeavor has revealed itself: Cillic, as in the Cillic Moon. Thank you, and here's to 5 more years at least.
 		</p>
 
-		<div id="footer-container" style="visibility: hidden;"></div>
+		<div id="footer-container"></div>
 		<script>
 			fetch('includes/footer.html')
 				.then(response => response.text())
