@@ -1,0 +1,54 @@
+﻿<html style="background: black url(/images/hallway.png); background-attachment: fixed;background-size: cover;">
+<head>
+    <style>html{visibility: hidden;opacity:0;}</style>
+<div id="header-container"></div>
+	<script>
+		fetch('includes/header.html')
+			.then(response => response.text())
+			.then(data => {
+        const container = document.getElementById('header-container');
+        container.innerHTML = data;
+        
+    });
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="navigation-container"></div>
+		<script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
+
+		<h2>Games & Interactive Experiences</h2>
+		<p>This section contains links to the browser ports of any computer games made by myself and company</p>
+
+		<div id="gamearchive">
+			<h3 id="zone_zero">
+				<a href="https://ministryoflies.xyz/Zone.html">Zone Zeroo</a><br>
+			</h3>
+		<ul>
+		<p id="story">
+			This is the first-person horror RPG I co-developed with Tommy Nguyen. We both shared programming duties and 3D modelling, and I wrote the story and produced the sound and music.
+		</p>
+
+		</ul>
+
+		<div id="footer-container"></div>
+		<script>
+			fetch('includes/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-container').innerHTML = data;
+				});
+		</script>
+
+	</div>
+</body>
+</html>
