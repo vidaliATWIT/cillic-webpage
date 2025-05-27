@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Baskervville';
+  src: url('/fonts/Baskervville/static/Baskervville-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
-    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif !important;
+    font-family: 'Baskervville', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif !important;
 }
 
 body {
