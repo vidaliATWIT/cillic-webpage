@@ -150,13 +150,13 @@ html {
 
 #question {
     color: darkred;
-    text-indent: 10%;
     margin-right: auto;
     margin-left: auto;
+    max-width: 40%;
 }
 
 #answer {
-    text-indent: 10%;
     margin-right: auto;
     margin-left: auto;
+    max-width: 40%;
 }
