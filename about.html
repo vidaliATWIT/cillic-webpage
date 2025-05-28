@@ -1,0 +1,69 @@
+﻿<html style="background: black url(/images/hallway.png); background-attachment: fixed;background-size: cover;">
+<head>
+    <style>html{visibility: hidden;opacity:0;}</style>
+<div id="header-container"></div>
+	<script>
+		fetch('includes/header.html')
+			.then(response => response.text())
+			.then(data => {
+        const container = document.getElementById('header-container');
+        container.innerHTML = data;
+        
+    });
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="navigation-container"></div>
+		<script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
+
+		<h2>FAQ</h2>
+		<p>I will occasionally receive emails asking about the site and what it's for. While I don't mind, I think it's fitting to provide some sort of clarification for the casual visitor.</p>
+		<ul>
+		<h3><i>What's the Cillic Archive?</i></h3>
+		<p id="story">
+			I first made this page to catalog all the things I was doing one particularly productive summer in 2020. Since then it's become the de-facto portfolio for my work and non-work. 
+		</p>
+
+		<h3><i>What kinds of things do you post?</i></h3>
+		<p id="story">
+			Whatever I'm working on in the worlds of music, software, writing, and occasionally video.
+		</p>
+
+		<h3><i>Who owns this page?</i></h3>
+		<p id="story">
+			Ian G. Vidal.
+		</p>
+
+		<h3><i>How often does this page get updated?</i></h3>
+		<p id="story">
+			Previously almost never, but I've made improvements in the site's infrastructure that should remedy that in the future.
+		</p>
+
+		<h3><i>Is this a blog?</i></h3>
+		<p id="story">
+			No. If any of the URLs for this page ever link to a Blogspot, Medium, or Substack, then I am certainly dead, and this page has been compromised by outside forces.
+		</p>
+		</ul>
+
+		<div id="footer-container"></div>
+		<script>
+			fetch('includes/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-container').innerHTML = data;
+				});
+		</script>
+
+	</div>
+</body>
+</html>
