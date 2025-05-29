@@ -63,9 +63,9 @@ text-indent: 10%;
 
 #sigil {
     margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     max-width: 25%;
-    min-width: 5%;
+    min-width: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
