@@ -61,6 +61,17 @@ text-indent: 10%;
     width: 80%;
 }
 
+#sigil {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    max-width: 50%;
+    min-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 
 #newspic {
 border: white double 5px;
