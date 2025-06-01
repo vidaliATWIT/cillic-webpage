@@ -1,0 +1,56 @@
+﻿<html style="background: black url(/images/hallway.png); background-attachment: fixed;background-size: cover;">
+<head>
+    <style>html{visibility: hidden;opacity:0;}</style>
+<div id="header-container"></div>
+	<script>
+		fetch('includes/header.html')
+			.then(response => response.text())
+			.then(data => {
+        const container = document.getElementById('header-container');
+        container.innerHTML = data;
+        
+    });
+	</script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="navigation-container"></div>
+		<script>
+		fetch('includes/navigation.html')
+			.then(response => response.text())
+			.then(data => {
+				const container = document.getElementById('navigation-container');
+				container.innerHTML = data;
+				
+			});
+		</script>
+
+		<h2>Cillic Audio</h2>
+		<p>The de-facto homepage of Cillic Audio. Basement-built plugins from my hands to yours.</p>
+		<h3><i>Metal Box</i></h3>
+		<img id="newspic" src="images/metalbox.png">
+		<p id="story">
+			A modulated reverb and resonator specializing in compressed, metallic tones reminiscient of of the electro-mechanical reverbs of yore. 
+			The patented stability parameter allows you to venture beyond our realm into worlds of resonant room tones and feedback.
+		</p>
+
+		<h3><i>Metal Box Lite</i></h3>
+		<img id="newspic" src="images/metalboxlite.png">
+		<p id="story">
+			Metal Box's little brother. Contains all the essential controls for creating your very own surreal resonant space.
+			Completely free of charge. No license required. Just plug-in and go.
+		</p>
+
+		<div id="footer-container"></div>
+		<script>
+			fetch('includes/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-container').innerHTML = data;
+				});
+		</script>
+
+	</div>
+</body>
+</html>
