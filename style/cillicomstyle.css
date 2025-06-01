@@ -15,11 +15,6 @@ body {
     background-size: cover;
 }
 
-#plugin_download {
-    text-align: center;
-}
-
-
 h1 {
     text-align: center;
 }
@@ -115,6 +110,12 @@ border: white double 5px;
 {
     font-size: 75%;
     float: right;
+}
+
+
+#pluginlink {
+    text-align: center;
+    font-size: 75%;
 }
 
 #clicker {
