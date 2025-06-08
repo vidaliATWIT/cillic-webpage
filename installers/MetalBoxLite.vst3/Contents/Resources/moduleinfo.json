@@ -1,0 +1,62 @@
+{
+  "Name": "MetalBoxLite",
+  "Version": "1.0.0",
+  "Factory Info": {
+    "Vendor": "Cillic Audio",
+    "URL": "https://cillicaudio.com",
+    "E-Mail": "",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "ABCDEF019182FAEB436C6C634D62786C",
+      "Category": "Audio Module Class",
+      "Name": "Metal Box Lite",
+      "Vendor": "Cillic Audio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Modulation",
+        "Reverb",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF011234ABCD436C6C634D62786C",
+      "Category": "Component Controller Class",
+      "Name": "Metal Box Lite",
+      "Vendor": "Cillic Audio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Modulation",
+        "Reverb",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF01C0DEF00D436C6C634D62786C",
+      "Category": "Plugin Compatibility Class",
+      "Name": "Metal Box Lite",
+      "Vendor": "Cillic Audio",
+      "Version": "1.0.0",
+      "SDKVersion": "VST 3.7.12",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}
