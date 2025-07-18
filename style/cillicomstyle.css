@@ -38,7 +38,6 @@ h1 {
 @media (max-width: 768px) {
   #content {
     max-width: 100%; /* Much wider on mobile */
-    font-size: 200%;
   }
 }
 
