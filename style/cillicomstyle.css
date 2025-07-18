@@ -27,11 +27,18 @@ h1 {
     margin-top: 2%;
     margin-bottom: 2%;
     min-height: 20%;
-    max-width: 50%;
+    max-width: 75%;
     min-width: 20em;
     background-color: black;
     padding: 25px 25px 25px 25px;
     border: white solid 2.5px;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  #content {
+    max-width: 95%; /* Much wider on mobile */
+  }
 }
 
 li {
