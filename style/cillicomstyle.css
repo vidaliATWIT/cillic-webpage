@@ -75,7 +75,7 @@ li {
 
 
 #newspic {
-border: white double 5px;
+    border: white double 5px;
     margin-top: 20px;
     margin-bottom: 25px;
     max-width: 65%;
