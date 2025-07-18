@@ -24,8 +24,8 @@ h1 {
     font-size: 120%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     min-height: 20%;
     max-width: 50%;
     min-width: 20em;
@@ -33,10 +33,6 @@ h1 {
     padding: 25px 25px 25px 25px;
     border: white solid 2.5px;
 }
-
-ul {
-}
-
 
 li {
     font-size: 90%;
