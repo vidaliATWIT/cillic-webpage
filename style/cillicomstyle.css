@@ -20,7 +20,7 @@ h1 {
 }
 
 #content {
-    color: white;
+    color: #0d0c12;
     font-size: 125%;
     margin-right: auto;
     margin-left: auto;
@@ -29,9 +29,8 @@ h1 {
     min-height: 20%;
     max-width: 60%;
     min-width: 20em;
-    background-color: black;
+    background-color: #fbfbfb;
     padding: 2% 4% 2% 4%;
-    border: white solid 2.5px;
 }
 
 /* Mobile override */
@@ -51,7 +50,6 @@ li {
 }
 
 #logo {
-    border: white double 5px;
     margin-top: 35px;
     margin-bottom: 70px;
     max-width: 75%;
@@ -75,7 +73,6 @@ li {
 
 
 #newspic {
-    border: white double 5px;
     margin-top: 20px;
     margin-bottom: 25px;
     max-width: 65%;
@@ -103,7 +100,6 @@ li {
 
 
 #video {
-    border: white double 5px;
     margin-bottom: 70px;
     max-width: 75%;
     min-width: 50%;
@@ -159,15 +155,15 @@ a {
     }
 
 .exep:link {
-    color: white;
+    color: #0d0c12;
 }
 
 .exep:visited {
-    color: white;
+    color: #0d0c12;
 }
 
 .exep:active {
-    color: white;
+    color: #0d0c12;
 }
 
 .exep:hover {
